@@ -1,0 +1,409 @@
+
+
+
+
+
+
+
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #222;
+    padding-bottom: 40px;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+nav {
+    width: 95%;
+    margin: 20px auto;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 65px;
+    padding: 10px;
+
+    background-color: #123456;
+    color: white;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 13px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d4af37;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    margin: 35px 0;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #d4af37;
+    font-size: 18px;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+section h2 {
+    text-align: center;
+    color: #123456;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+
+    border-bottom: 3px solid #d4af37;
+}
+
+
+/* =========================
+   GENERAL PARAGRAPHS
+========================= */
+
+section p {
+    font-size: 17px;
+    line-height: 1.8;
+
+    max-width: 800px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================
+   INFORMATION SECTION
+========================= */
+
+#information p {
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 15px 20px;
+
+    background-color: #77b7f8;
+
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: left;
+}
+
+#information strong {
+    color: #050506;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-item {
+    background-color: #77b7f8;
+
+    padding: 20px;
+    margin: 20px 0;
+
+    border-left: 5px solid #d4af37;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s ease;
+}
+
+.education-item h3 {
+    color: #123456;
+    margin-bottom: 8px;
+}
+
+.education-item h4 {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    text-align: left;
+    margin: 0;
+}
+
+
+/* =========================
+   LISTS
+========================= */
+
+section ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+section li {
+    background-color: #77b7f8;
+
+    padding: 15px 20px;
+
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   HOVER EFFECTS
+========================= */
+
+#information p:hover,
+.education-item:hover,
+section li:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact p {
+    background-color: #77b7f8;
+
+    padding: 15px 20px;
+    margin: 15px auto;
+
+    max-width: 700px;
+
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: left;
+}
+
+#contact a {
+    color: #123456;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   PERSONAL SECTION
+========================= */
+
+#personal p {
+    max-width: 800px;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   REFEREES
+========================= */
+
+#referees p {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+}
+
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+.top-button {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    padding: 12px 18px;
+
+    background-color: #123456;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.top-button:hover {
+    background-color: #d4af37;
+    color: #111;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   TABLET RESPONSIVENESS
+========================= */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        width: 92%;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        min-height: 50px;
+        font-size: 12px;
+    }
+
+    section {
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+    section ul {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    #personal p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
